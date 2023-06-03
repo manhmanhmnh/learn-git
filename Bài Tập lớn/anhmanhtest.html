@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <form>
+          <input type="text" id="input-data">
+          <button type="submit" onclick="submitData()">Gửi</button>
+          <p id="success-message" style="display: none;">Đã gửi thành công!</p>
+     </form>
+</body>
+<script>
+     function submitData() {
+  // Lấy giá trị của ô nhập dữ liệu
+  const inputData = document.getElementById("input-data").value;
+  
+  // Gửi dữ liệu đến server
+  // Ở đây chúng ta sẽ sử dụng một hàm giả để mô phỏng việc gửi dữ liệu
+  sendToServer(inputData, function(response) {
+    // Nếu gửi thành công, hiển thị thông báo "Đã gửi thành công!"
+    const successMessage = document.getElementById("success-message");
+    successMessage.style.display = "block";
+  });
+}
+
+function sendToServer(data, callback) {
+  // Ở đây chúng ta sẽ sử dụng một hàm giả để mô phỏng việc gửi dữ liệu
+  setTimeout(function() {
+    callback("success");
+  }, 1000);
+}
+</script>
+</html>

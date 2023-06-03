@@ -1,0 +1,346 @@
+@media(max-width:1400px) {
+     #container{
+          max-height: 50px;
+          width: 100%;
+          position: absolute;
+          z-index: -3;
+          background-color: rgb(201, 20, 20);
+          padding-top: 15px;
+      }
+      #manhnee {
+        padding-left: 210px;
+      }
+      #wraper-div{
+          width: 100%;
+          color: rgb(64, 73, 82);
+      }
+      #footer-div{
+          width: 100%;
+          min-height: 50px;
+          background-color: lightgray;
+          line-height: 50px;
+      }
+      .logo{
+          padding-top: 50px;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding-bottom: 50px;
+          overflow: hidden;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding-bottom: 50px;
+          overflow: hidden;
+      }
+      li {
+          float: left;
+      }
+      li a {
+          
+          line-height: 100px;
+          display: block;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 40px;
+      }
+      a {
+          color: gray;
+      }
+      a:hover{
+          color: #ffffff;
+          background-color: rgb(55,55,55);
+          height: 120px;
+          border-left: 5px solid rgb(232,232,232);
+          border-right: 5px solid rgb(232,232,232);
+          border-bottom : 5px solid rgb(232,232,232);
+      }
+      #slide {
+          width: 100%;
+          background-color: rgb(232,232,232);
+          height: 1100px;
+      }
+      .image-container {
+          position: relative;
+          overflow: hidden;
+          width: 415px;
+          height: 375px;
+          margin: 0 auto;
+      }
+      .image-container img {
+          position: absolute;
+          transition: transform 1s ease; /* tốc độ chuyển động*/
+          width: 100%;
+          height: 100%;
+      }
+      .image-container img:nth-child(2) {
+          left: 100%;
+      }
+      .image-container img:last-child {
+          left: -100%;
+      }
+      .image-container.active img:nth-child(1) { /* hiệu uengs slinee*/
+          transform: translateX(-100%);
+      }
+      .image-container.active img:nth-child(2) {
+          transform: translateX(0);
+      }
+      .image-container.active img:last-child {
+          transform: translateX(100%);
+      }
+      .manhdeptrai {
+      font-size: 50px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: normal;
+      padding-left: 50px;
+      color: rgb(117, 117, 106)
+      }
+      .containerr {
+          width: 150%;
+          padding-left: 90px;
+          background-color: #ffffff;
+          padding-top:90px ;
+      }
+      .layout1 {
+      float: left;
+      width: 50%;
+      }
+      .layout2 {
+      float: left;
+      width: 50%;
+      }
+      .manhlaai {
+          padding-bottom: 60px; /*chỉnh khoảng cách nè*/
+      }
+      .layoutthu2 {
+          background-color: gray;
+          padding-top: 15px;
+      }
+      .my-button {
+        background-color: #656465;
+        border: none;
+        color: rgb(64,155,184);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px; /* Bo tròn góc */
+      }
+      body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0;
+        padding: 0;
+        transform: translateX(0px); /* Thay -20px bằng giá trị dịch chuyển tùy ý */
+      }
+      .gggmanhtop {
+          width: 100%;
+          background-color: rgb(41,41,41);
+          padding-bottom: 21%;
+          border-bottom: 1px solid #e5d9d9;
+          max-height:700px;
+      }
+      #manh13 {
+          text-align: center;
+      }
+      #manhh2 {
+          padding-left: 30px;
+          size: 4px;
+          color: #ffffff;
+      }
+      .right {
+          float: right;
+          display: block;
+          width: 50%;
+      }
+      .left {
+      float: left;
+      display: block;
+      }
+      #hhh {
+          color: white;
+          font-size: 20px;
+          margin-bottom: -4%;
+      }
+      #ggg1 {
+          padding-left: 12%;
+      }
+      #ggg2 {
+          padding-left: 12%;
+      }
+      #duoi1 {
+          color: rgb(64,155,184);
+          padding-left: 4%;
+      }
+      #duoi2 {
+          color: rgb(64,155,184);
+          padding-left: 40%;
+          margin-top: -28%;
+          margin-left: -5%;
+      }
+      #duoi3 {
+          color: rgb(64,155,184);
+          padding-left: 77%;
+          margin-top: -28%;
+          margin-left: -89px;
+      }
+      input[type="text"], input[type="email"], textarea {
+          padding: 20px;
+          border: 2px solid #403232;
+          border-radius: 0px;
+          width: 204px;
+          height: 40px;
+          resize: none;
+          margin: 9px;
+          font-size: 13px;
+          
+      }
+      #manh000, #manh111 {
+          width: 428px;
+      }
+      input[type="text"] {
+        background-color: rgb(32, 32, 40);
+        color: rgb(255, 255, 255);
+      }
+      #manh111 {
+        width: 428px;
+        height: 50px;
+      }
+      #submit {
+          background-color: #e7b6b6;
+          margin-left: 90%;
+          margin-top: -20%;
+      }
+      
+      #chu-duoi {
+          font-size: 35px;
+          padding-left: 20%;
+          color: gray;
+      }
+      #manhlaaine {
+          font-family: 'Times New Roman', Times, serif ;
+          font-size: 15px;
+          padding-left: 35%;
+          color: rgb(55,55,55);
+      }
+      .rectangle {
+          position: absolute;
+          left: 280px;
+          top: 60px;
+          padding-left: 80px;
+          width: 400px;/* chiều rộng của hình bự*/
+          height: 40px;/* cũng thế chiều dọc*/
+          background-color:rgb(64,155,184);
+          position: relative;
+      }
+      .bowtie {
+          position: absolute; /*không có nó thì ko tách ra đc*/
+          width: 40px; /*chỉnh cục t*/
+          height: 40px;/*cũng thế*/
+          clip-path: polygon(90% 0%, 30% 50%, 100% 100%);
+          transform: rotate(95deg); /*để chỉnh góc xuay cái hình v*/
+      }
+      .left1 {
+          background-color:rgb(64,155,184);
+          top: 1px;
+          left: -26px;
+          transform: rotate(96deg);
+      }
+      .right3 {
+          background-color:rgb(64,155,184);
+      
+          transform: rotate(274deg);
+          left: 380px;
+          top: -1px;
+          right: 370px;
+      }
+      .tren4 {
+          transform: rotate(324deg);
+          background-color:rgb(64,155,184);
+          top: 15px;
+          right: -10px;
+      }
+      .trenn2 {
+          background-color:rgb(64,155,184);
+          transform: rotate(144deg);
+          top: -15px;
+          right: 379px;
+      }
+      .kk {
+          width: 100%;
+      }
+      .qqq {
+          
+          color: #a91388;
+      }
+      #end {
+          margin-bottom: -100px;
+          width: 100%;
+          height: 690px;
+          background-color: rgb(41,41,41);
+          z-index: -2;
+          position: absolute;
+      }
+      .row {
+          display: flex;
+      }
+      .col {
+          flex: 1;
+          margin: 35px;
+      }
+      #aa {
+          font-size: 20px;
+          color: #ffffff;
+      }
+      #footer {
+          margin-left: 70px;
+          margin-right: 40px;
+          width: 90%;
+          background-color: black;
+          padding: 5.5px;
+          font-size: 16px;
+          color: #666;
+      }
+      .rightss {
+          float: right;
+      }
+      #m1 {
+          background-color: rgb(51,51,51);
+          border-radius: 5px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          padding-right: 17px;
+          padding-left: 17px;
+      }
+      .grey{
+          color: grey
+      }
+      #dgdgd {
+          color: aqua;
+      }
+      #nut{
+          font-size: 13px;
+          background-color: #988c8c;
+          color: rgb(255, 255, 255);
+          padding-left: 10px;
+          padding-right:7px ;
+          padding-top: 7px ;
+          padding-bottom: 9px ;
+          border-radius: 12px;
+      }
+      #aabb {
+          font-size: 13px;
+          color: #948787;
+      }
+      #aabbaa {
+          color: rgb(156, 153, 153);
+      }
+      #aabbaaa {
+          color: aqua;
+      }
+}

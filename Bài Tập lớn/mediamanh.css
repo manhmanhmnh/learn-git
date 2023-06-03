@@ -1,0 +1,161 @@
+@media(max-width:1330px) {
+     #manhanh {
+         padding-top: 20px;
+     }
+     #container {
+         background-color: crimson;
+     }
+     #chu-duoi {
+          font-size: 28px;
+          text-align: center;
+     }
+     #manhnee {
+          padding-left: 200px;
+     }
+     #manhlaaine {
+          font-size: 18px;
+     }
+     #duoi1 {
+          font-size: 14px;
+     }
+     #duoi2 {
+          margin-top: -27%;
+          font-size: 14px;
+     }
+     #duoi3 {
+          margin-top: -27%;
+          font-size: 14px;
+     }
+     .image-container img {
+          width: 360px;
+          height: 360px;
+     }
+     .gggmanhtop {
+          padding-bottom: 24%;
+     }
+     #aabb {
+          color: aqua;
+          font-size: 16px;
+     }
+     input[type="text"], input[type="email"], textarea {
+          width: 150px;
+     }
+
+}
+@media(max-width:1300px) {
+     input[type="text"], input[type="email"], textarea {
+          width: 100px;
+     }
+}
+@media(max-width:1460px) {
+     input[type="text"], input[type="email"], textarea {
+          width: 120px;
+     }
+     #chu-duoi {
+          font-size: 29px;
+     }
+     #manhlaaine {
+          font-size: 17px;
+     }
+}
+@media(max-width:1250px) {
+     #container {
+          background-color: rgb(23, 126, 42);
+     }
+     input[type="text"], input[type="email"], textarea {
+          width: 80px;
+     }
+     #manhnee {
+          padding-left: 150px;
+          font-size: 14px;
+     }
+     #chu-duoi {
+          font-size: 25px;
+     }
+     #manhanh {
+          padding-left: 27%;
+     }
+}
+@media(max-width:1110px) {
+     #container {
+          background-color: darkmagenta;
+     }
+     #hhh {
+          font-size: 15px;
+     }
+     #duoi1 {
+          font-size: 11px;
+     }
+     #duoi2 {
+          margin-top: -28%;
+          font-size: 11px;
+          padding-left: 220px;
+     }
+     #duoi3 {
+          font-size: 11px;
+          margin-top: -28%;
+          padding-left: 450px;
+     }
+     #manhanh{
+          padding-left: 100px;
+     }
+     input[type="text"], input[type="email"], textarea {
+          width: 90px;
+     }
+     #nut {
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 1px;
+          padding-bottom: 5px;
+          border-radius: 5px;
+     }
+     #manh000 {
+          width: 300px;
+
+     }
+     #manh111 {
+          width: 300px;
+          height: 50px;
+     }
+
+}
+@media(max-width:1080px) {
+     #container {
+          background-color: blue;
+     }
+     #manhnee {
+          font-size: 13px;
+          padding-left: 100px; /* chỉnh link text*/ 
+     }
+     #manhmanh {
+          padding-left: 20px;
+          padding-top: -600px;
+     }
+     #chu-duoi {
+          font-size: 20px;
+     }
+     #manhlaaine {
+          font-size: 15px;
+     }
+
+}
+
+@media(max-width:1000px) {
+     #container {
+          background-color: darkseagreen;
+     }
+     #manhanh { /* chỉnh nơ*/
+          width: 85%;
+          height: 85%;
+          padding-left: 32%;
+     }
+     #chu-duoi {
+          font-size: 30px;
+     }
+     #manhlaai {
+          font-size: 20px;
+     }
+     .chu-nho {
+          font-size: 10px;
+     }
+}

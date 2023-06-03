@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>bai tap lon</title>
+</head>
+
+<body>
+  <style>
+    .navbar {
+    background-color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex: auto;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    padding: 7px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(239, 244, 240);
+}
+
+.navbar {
+    background-color: rgb(27, 14, 40);
+}
+
+.navbar a:hover {
+    border: 1px solid #000000;
+}
+
+#ff {
+    padding-left: 6%;
+}
+
+#tt {
+    padding-right: 30%;
+}
+*{
+    box-sizing: border-box;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1200px !important;
+}
+a{
+    text-decoration: none;
+}
+.bg-main{
+    background-color: #f9e0bb5e;
+}
+.bg-brown{
+    background-color: #563d37;
+}
+.fs-17{
+    font-size: 17px !important;
+}
+.img-bo{
+    border: 2px solid #bdbdbd;
+    padding: 6px;
+}
+.btn-brown{
+    background-color: #321E1E;
+    padding: 9px 33px;
+    border: 0;
+    font-weight: bold;
+}
+.t-color{
+    color: #FFC26F;
+}
+@media(max-width: 767px) {
+    .hide-mb{
+        display: none;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px) {
+    .hide-tab{
+        display: none;
+     }
+}
+@media(min-width: 1024px) {
+    .main-menu >li:not(:last-child) {
+        margin-right: 30px;
+        padding-right: 30px;
+        border-right: 1px solid #eee;
+    }
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 60px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(181 181 181), transparent);
+}
+.header-row{
+    border-bottom: 2px solid #c5c5c5;
+    padding-bottom: 5px;
+}
+.header-row a, .link-profile{
+    color: #75ce45;
+    font-size: 14px;
+}
+.text-link{
+    color: #75ce45;
+}
+.fs-18{
+    font-size: 18px;
+}
+.post-item .box-img{
+    padding-right: 13px;
+}
+.img-avt{
+    max-height: 195px;
+    object-fit: cover;
+}
+.card-avt{
+    border: none !important;
+}
+.card-avt .card-body{
+    padding-left: 0 !important;
+}
+footer .row-bottom{
+    border-top: 1px solid #e3e3e3;
+}
+.logo-footer{
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+}
+.list-group .list-group-item{
+    background: transparent;
+    padding-left: 0;
+    border-bottom-color: #5a5a5a !important;
+}
+.icon-quote-right {
+    transform: rotate(180deg);
+}
+.icon-quote{
+    font-size: 20px !important;
+}
+.tt-post{
+    color: #bdd198 !important;
+}
+.bg-link{
+    background-color: #75ce45;
+}
+.form-control{
+    background: #7c7c7c !important;
+    border: 0 !important;
+}
+.form-control::placeholder{
+    color: #a3a3a3;
+}
+
+.text-light{
+    color: #a3a3a3 !important;
+}
+form.search{
+    position: relative;
+}
+form.search input{
+    border-radius: 36px;
+}
+form.search input::placeholder{
+    color: #fff !important;
+}
+.icon-search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background: #000;
+    border-radius: 36px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.container1 {
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+    background-color: #321E1E;
+}
+  
+  .white-text {
+    flex: 5;
+    padding: 40px;
+    color: #e3e3e3;
+  }
+.ccc{
+    padding-left: 62px;
+        
+}
+input[type="text"]{
+    padding: 2px;
+    border: 2px solid #e7e0e0;
+    border-radius: 5px;
+    width: 260px;
+    height: 30px;
+    resize: none;
+    padding-left: 1%;
+    float: left;
+}
+button {
+    background-color: rgb(254, 254, 254);
+    border-radius: 10px;  /*xóa đi làm chó */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.color-row {
+    background-color: rgb(221, 81, 11);
+    height: 14px; 
+  }
+.happyending{
+    height: 70px; 
+    background-color: #081302;
+}
+.nn{
+    padding-top: 10px;
+    float: left;
+}
+.mm{
+    padding-top: 10px;
+}
+  </style>
+  <div id="container">
+    <div id="wraper-div">
+      <nav class="navbar">
+        <ul>
+          <li id="tt"><a href="link">Tel:xxx.xxx.xxx | Mail : info@domain.com</a></li>
+          <li id="ff"><a href="#Link2">Home</a></li>
+          <li id="ff"><a href="#Link3">About</a></li>
+          <li id="ff"><a href="#Link4">Page</a></li>
+          <li id="ff"><a href="#Link5">DropDown</a></li>
+          <li id="ff"><a href="#Link6">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <section class="header-top pt-3 pb-3 bg-main">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="logo">
+            <img src="logo.png" alt="" style="display: block; margin-bottom: 10px;">
+            <img src="logo2.png" alt="" style="display: block;">
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <img class="float-end" src="cafe1.png" alt="" style="width: 468px; height: 60px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="main-wrapper">
+    <section class="banner pt-5 pb-5 bg-brown">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2 class="text-white">Cà Phê Highlands coffee</h2>
+            <span class="text-white fs-17 d-block mt-4 fs-6">Cà phê <b class="t-color">
+                Highlands Coffee Culi</b> gói 200g là sản phẩm đặc sản của của cafe Sữa Đá, Cà phê của hệ thống
+              Highlands Coffee.</span>
+            <span class="text-white fs-17 d-block mt-4 fs-6">Hạt cà phê thượng hạng trồng ở <b class="t-color"> vùng cao
+                nguyên của Việt Nam</b> được rang và phối trộn theo công thức độc đáo tại <b
+                class="t-color">Highlands</b>. Cho một sự cân bằng giữa vị mạnh nhưng rất êm đềm.</span>
+            <span class="text-white fs-17 d-block mt-4 fs-6">Thành phần: 100% hạt cà phê Culi (Culi là hạt cà phê được
+              tuyển chọn đặc biệt, có hình dáng tròn, khác với các hạt cafe thông thường).</span>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img class="img-bo" src="anh4.jpg" style="width: 100%;height: 280px;" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <a href="#"><button class="btn-brown text-white">Readmore</button></a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <a href="#"> <button class="btn-brown text-white"><i class="fa fa-angle-double-left"></i>
+                    Prev</button></a>
+              </div>
+              <div class="col">
+                <a href="#"> <button class="btn-brown text-white float-end">Next <i
+                      class="fa fa-angle-double-right"></i></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-blog pt-5 pb-5 bg-main">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="header-row">
+              <h3 class="fs-4">Featured Work !</h3>
+            </div>
+            <img class="mt-4 img-bo" src="anh1.jpg" style="width: 100%;height: 280px;" alt="">
+            <span class="text-dark fs-17 d-block mt-4 fs-6">Ngày 16/06/1996: Thương hiệu cà phê Trung Nguyên được thành
+              lập tại thành phố Buôn Ma Thuột - thủ phủ cà phê Việt Nam.</span>
+            <span class="text-dark fs-17 d-block mt-4 fs-6">Ngày 20/08/1998: Cửa hàng đầu tiên của công ty Trung Nguyên
+              được khai trương tại TP HCM. Từ đó, việc thành lập quán cà phê đầu tiên là bước khởi đầu cho việc hình
+              thành hệ thống quán Trung Nguyên tại các tỉnh thành Việt Nam và các quốc gia trên thế giới, mở rộng kinh
+              doanh theo mô hình nhượng quyền thương hiệu. </span>
+            <span class="text-dark fs-17 d-block mt-4 fs-6">Năm 2000: Cà phê Trung Nguyên lần đầu tiên có mặt tại Hà
+              Nội, triển khai mô hình nhượng quyền.
+            </span>
+            <div class="row mt-4">
+              <div class="col"> <a href="#"><button class="btn-brown text-white">VIEW DEMO! <i
+                      class="fa fa-angle-double-right"></i> </button></a>
+              </div>
+              <div class="col"> <a href="#"><button class="btn-brown text-white">MORE INFO! <i
+                      class="fa fa-angle-double-right"></i></button></a></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="header-row d-flex justify-content-between align-items-center">
+              <h3 class="fs-4">Current Projects !</h3>
+            </div>
+            <div class="row justify-content-center align-items-center g-2">
+              <div class="col">
+                <img class="mt-4 img-bo" src="anh3.jpg" style="width: 140%;height: 140px;" alt="">
+              </div>
+              <div class="col">
+                <img class="mt-4 img-bo" src="anh5.jpeg" style="width: 140%;height: 140px;" alt="">
+              </div>
+              <div class="col">
+                <img class="mt-4 img-bo" src="anh6.jpg" style="width: 140%;height: 140px;" alt="">
+              </div>
+            </div>
+            <div class="row justify-content-center align-items-center g-2">
+              <div class="col">
+                <img class="mt-4 img-bo" src="anh7.jpg" style="width: 140%;height: 140px;" alt="">
+              </div>
+              <div class="col">
+                <img class="mt-4 img-bo" src="anh8.jpg" style="width: 140%;height: 140px;" alt="">
+              </div>
+              <div class="col">
+                <img class="mt-4 img-bo" src="anh9.jpg" style="width: 140%;height: 140px;" alt="">
+              </div>
+            </div>
+            <div class="header-row mt-5">
+              <h3 class="fs-4">About This Free PSD Template !</h3>
+            </div>
+            <span class="text-dark fs-17 d-block mt-4 fs-6">Người sáng lập, Chủ tịch kiêm Tổng Giám đốc Tập đoàn Trung
+              Nguyên là Ông Đặng Lê Nguyên Vũ. Ông Đặng Lê Nguyên Vũ sinh năm 1971 tại tỉnh Khánh Hòa trong một gia đình
+              nông dân nghèo, sau đó gia đình ông chuyển đến sinh sống ở miền Tây Nguyên, tỉnh Đắk Lắk. Sau khi nhập học
+              Đại học Tây Nguyên năm 1992, ông bắt đầu các hoạt động tìm tòi, nghiên cứu về lĩnh vực cà phê và đến năm
+              1996, ông cùng vợ thành lập hãng Cà phê Trung Nguyên tại Buôn Ma Thuột. Cho đến nay, ông đã khẳng định
+              được niềm đam mê cà phê của mình bằng sự thành công vượt trội của thương hiệu cà phê Trung Nguyên.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="footer pt-3 pb-3 bg-main">
+    <div class="container1">
+      <div class="box-text" style="background-color: #321E1E;"></div>
+      <div class="white-text">
+        <h5 class="footer-title text-light">Ipsumsenterdum non velit</h5>
+        <span class="text-white fs-17 d-block mt-4 fs-6">Logo của Tập đoàn cà phê Trung Nguyên nhìn qua có vẻ đơn giản với 2 màu sắc trắng đen chủ đạo tạo nên một tổng thể tương đối hài hòa, nhưng có lẽ ít người biết được những tầng ý nghĩa ẩn chứa trong nó vô cùng sâu sắc. </span>
+        <span class="text-white fs-17 d-block mt-4 fs-6"> Logo cà phê Trung Nguyên Legend nhìn qua có rất nhiều biểu tượng và chi tiết nhỏ, có nhiều nét tương đồng với hoa văn trên mặt trống đồng Việt Nam.</span>
+        <span class="text-white fs-17 d-block mt-4 fs-6">5 vạch trên logo Trung Nguyên tượng trưng cho 5 năng lượng: Năng lượng Sáng tạo, Năng lượng Giàu có, Năng lượng Thành công, Năng lượng Hạnh phúc, Năng lượng yêu Thương.</span>
+      </div>
+      <div class="white-text">
+        <h5 class="footer-title text-light">Ipsumsenterdum non velit</h5>
+        <span class="text-white fs-17 d-block mt-4 fs-6">Việc không thể điều chỉnh để thích ứng với khẩu vị địa phương là yếu tố khiến Starbucks không đánh bại những chuỗi cà phê địa phương như Highland hay Trung Nguyên. Lý do thứ hai kéo theo sự thất bại của Starbucks ở thị trường Việt Nam liên quan đến mức giá thành.</span>
+        <span class="text-white fs-17 d-block mt-4 fs-6">VÌ SAO STARBUCKS THẤT BẠI Ở ÚC?</span>
+        <span class="text-white fs-17 d-block mt-4 fs-6">Ở Việt Nam, 5 chuỗi cà phê lớn nhất chiếm 15,3% thị phần, trong đó Highlands Coffee nắm 7,2%. Còn Starbucks, chuỗi đứng thứ 2 về doanh thu theo Euromonitor, sở hữu chưa đầy 3%.</span>
+     </div>
+      <div class="white-text">
+        <h5 class="footer-title text-light">Ipsumsenterdum non velit</h5>
+        <span class="text-white fs-17 d-block mt-4 fs-6">Thất bại của Cà phê Starbucks tại thị Trường Úc là một vi dụ điển hình. Cà phê Starbucks đã không chú trọng tới việc am hiểu văn hóa địa phương nơi đây và đã không thể cạnh tranh được với các cửa hàng cà phê của những người bản địa.</span>            
+        <span class="text-yellow fs-17 d-block mt-4 fs-6"><b class="t-color">Tel : xxx.xxx.xxx</b></span>
+        <span class="text-yellow fs-17 d-block mt-4 fs-6"><b class="t-color">Fax : xxx.xxx.xxx</b></span>
+        <span class="text-yellow fs-17 d-block mt-4 fs-6"><b class="t-color">Email : info@domain.com</b></span>
+        <label id ="ccc" for="search">Join our mailing list : </label>
+        <form action="https://www.google.com/"method="get">
+          <input type="text" id="email" name="email" placeholder="Enter Email Here">
+        </form>
+        <div><button>GO</button></div>
+      </div>
+    </div>
+  </section>
+  <div class="happyending">
+    <div class="nn">
+      <span class="text-light">Company No.xxxxxxxx - VAT No.xxxxxxxxx.</span> <br>
+      <span class="text-light">Coppyright © 2013. All Rights Reserved - Domain Name</span>
+    </div>
+    <div class="mm">
+      <span class="text-light text-end d-block">E-Newsletter | Linkedln | Twitter | RSS Feed</span>
+      <span class="text-light text-end d-block">Valid XHTML | Valid CSS | Template by OS Templates</span>
+    </div>
+  </div>
+
+</body>
+
+</html>
